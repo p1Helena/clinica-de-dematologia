@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- fontes --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Lumiè</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-clinica" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#consulta" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Consulta
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#tratamentos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Tratamentos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#loja" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-clinica">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/carousel/recepção.png" alt="Recepção">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/sala de espera.png" alt="Sala de espera">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/consultorio 1.png" alt="Consultorio 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/consultorio 2.png" alt="Consultorio 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/sala de tratamento.png" alt="Sala de tratamento">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/loja entrada.png" class="d-block w-100 rounded" alt="Entrada da loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title"><span class="text-white">Sobre </span><span class="text-colored">a clínica</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc eu nunc.
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consulta" class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"><span class="text-colored">Consulta</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/exames/atendimento médico.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Consulta dermatológica
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/exames/análise de pele com tecnologia.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Análise de pele com tecnologia de ponta
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/exames/análise de cabelo e coro cabeludo.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Análise do cabelo e do coro cabeludo
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tratamentos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"><span class="text-colored">Tratamentos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/tratamentos/microagulhamento - skin booster.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Microagulhamento
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/tratamentos/depilação a lazer.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Depilação a lazer
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/tratamentos/led terapia.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Terapia de LED
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/tratamentos/aplicação de colageno.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Aplicação de colageno
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/tratamentos/aplicação de botox.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Aplicação de botox
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/tratamentos/tratamento capilar.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-3">
+                            <i class="bi bi-prescription"></i>
+                            Tratamento capilar
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officiis, eaque sapiente natus cupiditate deserunt saepe sunt voluptate illum deleniti voluptas quas blanditiis, quos animi labore atque? Ab, tempora aut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="loja" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        <span class="text-colored">Loja</span>
+                    </h2>
+                    <p class="text-center">
+                        Produtos que temos disponíveis em nossa loja física
+                    </p>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-loja">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#limpeza" class="fw-bold text-start nav-link text-colored active">Limpeza</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cremes-faciais" class="fw-bold text-start nav-link text-colored">Cremes Faciais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#clareador" class="fw-bold text-start nav-link text-colored">Clareador de Manchas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#couro-cabeludo" class="fw-bold text-start nav-link text-colored">Couro Cabeludo</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#anti-idade" class="fw-bold text-start nav-link text-colored">Anti-idade</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="limpeza">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/limpeza/Kit Skin1004 Madagascar Centella Limpeza Facial Óleo+espuma.webp" alt="Kit Skin1004 Madagascar Centella Limpeza Facial Óleo+espuma" />
+                                        <h5 class="text-colored fw-bold mt-2">Kit Skin1004 Madagascar Centella Limpeza Facial Óleo+espuma</h5>
+                                        <p>
+                                            O Kit Madagascar Centrella da SKIN1004 combina dois produtos para uma rotina de limpeza facial eficiente e delicada: Light Cleansing Oil e Ampoule Foam.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/limpeza/Kit Travek 5 Produtos mini.webp" alt="Kit Travel 5 Produtos Mini SKIN1004 Madagascar Centella Skincare Coreano"/>
+                                        <h5 class="text-colored fw-bold mt-2">Kit Travel 5 Produtos Mini SKIN1004 Madagascar Centella Skincare Coreano</h5>
+                                        <p>
+                                            SKIN1004 Madagascar Centella Travel Kit é um kit completo de cuidados faciais com 5 produtos  em tamanho mini. CONTEÚDO DO KIT: 1 Centella Light Cleansing Oil, 1 Centella Ampoule Foam, 1 Centella Toning Toner, 1 Centella Ampoule e 1 Centella Soothing Cream.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/limpeza/Kit Dupla Limpeza Heartleaf Óleo e Espuma- Anua.webp" alt="Kit Dupla Limpeza Heartleaf Óleo + Espuma | Anua" />
+                                        <h5 class="text-colored fw-bold mt-2">Kit Dupla Limpeza Heartleaf Óleo + Espuma | Anua</h5>
+                                        <p>
+                                            Dupla Limpeza Completa
+                                            Óleo e espuma trabalham juntos para remover maquiagem, protetor solar e impurezas em duas etapas. 
+                                            Fórmula com heartleaf que atua na limpeza profunda dos poros, ajudando a reduzir cravos e oleosidade.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/limpeza/Kit Skincare simples e perfeito.png" alt="Kit Skincare simples e perfeito"/>
+                                        <h5 class="text-colored fw-bold mt-2">Kit Skincare simples e perfeito</h5>
+                                        <p>
+                                            Kit básico de cuidados com a pele, contém 1 face wash + 1 Cleansing Oil + 1 Gokujyun lotion.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/limpeza/Kit Pele de Vidro acessível - rotina de 7 dias.webp" alt="Kit Pele de Vidro acessível - rotina de 7 dias" />
+                                        <h5 class="text-colored fw-bold mt-2">Kit Pele de Vidro acessível - rotina de 7 dias.</h5>
+                                        <p>
+                                            Kit Pele de Vidro 7 dias - Limpeza e Luminosidade
+                                            Transforme sua pele em apenas 7 dias com o Kit Pele de Vidro 7 dias, uma rotina completa de 5 etapas de Medicube. Combina limpeza, esfoliação, hidratação, colágeno e reparo noturno para uma pele firme, lisa e radiante.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/limpeza/Principia Kit Antiacne Avançado.webp" alt="Principia Kit Antiacne Avançado"/>
+                                        <h5 class="text-colored fw-bold mt-2">Principia Kit Antiacne Avançado</h5>
+                                        <p>
+                                            Kit Antiacne Avançado com 5 produtos: um gel de limpeza com mix de tensoativos + salicílico + glicerina, um sérum com mix de 4 ativos, um sérum de composição de ácidos hialurônicos + vit.B5, um tônico de ácido lático + ácido salicílico e um protetor solar fluído FPS 60 + niacinamida, ação antioleosidade, toque seco e com eficácia contra raios UVA e UVB, luz visível e azul.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="cremes-faciais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/creme-facial/Creme hidratante antisinais ginseng e niacinamide - Beauty of joseon.webp" alt="Creme Hidratante Antissinais Ginseng + Niacinamide | Beauty of Joseon" />
+                                        <h5 class="text-colored fw-bold mt-2">Creme Hidratante Antissinais Ginseng + Niacinamide | Beauty of Joseon</h5>
+                                        <p>
+                                            Hidratação profunda e duradoura, sua fórmula rica em ingredientes tradicionais coreanos ajuda a manter a pele hidratada, macia e confortável ao longo do dia. O ginseng é conhecido por suas propriedades antioxidantes, ajudando a revitalizar a pele e promover um aspecto mais saudável.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/creme-facial/Dr. Althea 345 Relief Cream Hidratante Facial 50ml.webp" alt="Dr. Althea 345 Relief Cream Hidratante Facial 50ml"/>
+                                        <h5 class="text-colored fw-bold mt-2">Dr. Althea 345 Relief Cream Hidratante Facial 50ml</h5>
+                                        <p>
+                                            O creme hidratante facial 345 Relief Cream da Dr. Althea foi pensado para uma rotina de cuidado diário com foco em conforto e equilíbrio da pele do rosto. Sua textura em creme ajuda a deixar a aplicação agradável tanto de manhã quanto à noite.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/creme-facial/Dr. Althea Barrier 147 Cream Hidratante para Pele Seca e Sensível.webp" alt="Dr. Althea Barrier 147 Cream Hidratante para Pele Seca e Sensível" />
+                                        <h5 class="text-colored fw-bold mt-2">Dr. Althea Barrier 147 Cream Hidratante para Pele Seca e Sensível</h5>
+                                        <p>
+                                            O creme ajuda a fortalecer a barreira da pele e protege a pele contra agressões externas, reduzindo a perda de água e melhorando a resistência natural. Hidratação em múltiplas camadas com 7 tipos de ácido hialurônico que atua em diferentes níveis da pele para hidratação prolongada.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/creme-facial/Avène Cleanance Aqua-Gel - Hidratante Facial 30g.webp" alt="Avène Cleanance Aqua-Gel - Hidratante Facial 30g"/>
+                                        <h5 class="text-colored fw-bold mt-2">Avène Cleanance Aqua-Gel - Hidratante Facial 30g</h5>
+                                        <p>
+                                            O Cleanance Aqua-Gel oferece 24 horas de hidratação intensa sem obstruir os poros, garantindo mais leveza e conforto. Enriquecido com a poderosa Água Termal Avène, seu uso acalma e reequilibra o aspecto da sua pele, diminuindo a irritação e a sensibilidade.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/creme-facial/Creme Facial Dr. Althea Aqua Marine Watery Cream.webp" alt="Creme Facial Dr. Althea Aqua Marine Watery Cream" />
+                                        <h5 class="text-colored fw-bold mt-2">Creme Facial Dr. Althea Aqua Marine Watery Cream</h5>
+                                        <p>
+                                            Hidratação leve que dura o dia todo, feita de água de bambu e ácido hialurônico. Auxilia na retenção da hidratação sem deixar sensação pesada. Com efeito calmante para a pele, composta de pantenol e ativos hidratantes, ajuda a fortalecer a barreira de hidratação e suavizar a pele.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/creme-facial/Creme Clareador Celimax.webp" alt="Creme Clareador Celimax Pore Dark Spot Brightening Cream 35ml"/>
+                                        <h5 class="text-colored fw-bold mt-2">Creme Clareador Celimax Pore Dark Spot Brightening Cream 35ml</h5>
+                                        <p>
+                                            O Pore+Dark Spot Brightening Cream da celimax é um creme facial coreano de uso diário, que ajuda a uniformizar o tom da pele, melhorar a aparência de áreas escurecidas e suavizar poros visíveis, enquanto mantém a hidratação ao longo do dia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="clareador">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/manchas/Serum facial.webp" alt="Eucerin Anti-Pigment Dual - Sérum Facial Antimanchas e Antissinais 30ml" />
+                                        <h5 class="text-colored fw-bold mt-2">Eucerin Anti-Pigment Dual - Sérum Facial Antimanchas e Antissinais 30ml</h5>
+                                        <p>
+                                            Sérum facial para todos os tipos de pele. Eucerin Anti-Pigment Dual Serum reduz as marcas hiperpigmentadas do rosto, mantendo o tom uniforme.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/manchas/serum-la-roche-posay-mela-b3--3-.webp" alt="La Roche-Posay MelaB3 - Sérum Facial Clareador 15ml" />
+                                        <h5 class="text-colored fw-bold mt-2">La Roche-Posay MelaB3 - Sérum Facial Clareador 15ml</h5>
+                                        <p>
+                                            Sérum facial antimanchas para todos os tipos e tons de pele, incluindo oleosas. La Roche-Posay Mela B3 combina 18 anos de pesquisa dermatológica em uma fórmula inovadora, capaz de corrigir e prevenir manchas como nunca antes.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/manchas/serum-concentrado-bioderma-pigmentbio-c-concentrate--1-.webp" alt="Bioderma Pigmentbio C-Concentrate - Sérum Concentrado Uniformizador 15ml" />
+                                        <h5 class="text-colored fw-bold mt-2">Bioderma Pigmentbio C-Concentrate - Sérum Concentrado Uniformizador 15ml</h5>
+                                        <p>
+                                            Sérum antioxidante e uniformizador para todos os tipos de pele. Bioderma Pigmentbio C-Concentrate combate a formação de áreas escuras, elimina manchas já estabelecidas e acelera a renovação celular, protegendo do aparecimento de novas, enquanto restaura o brilho da pele.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/manchas/7908615000244_01.webp" alt="La Roche-Posay Cicaplast Baume B5 - Creme Hidratante 40ml" />
+                                        <h5 class="text-colored fw-bold mt-2">La Roche-Posay Cicaplast Baume B5 - Creme Hidratante 40ml</h5>
+                                        <p>
+                                            Creme hidratante para peles ressecadas e sensibilizadas. La Roche-Posay Cicaplast Baume B5 repara a pele do corpo, mãos, pés e lábios do ressecamento, irritações, assaduras e queimaduras leves.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="couro-cabeludo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/couro-cabeludo/Ampola Capilar Lilyeve.webp" alt="Ampola Capilar Lilyeve Scalp:Turn Cica Pdrn Brush 100ml" />
+                                        <h5 class="text-colored fw-bold mt-2">Ampola Capilar Lilyeve Scalp:Turn Cica Pdrn Brush 100ml</h5>
+                                        <p>
+                                            A Lilyeve Scalp:Turn Cica Pdrn Brush é uma ampola capilar de alta performance, desenvolvida com a tecnologia avançada da K-Beauty para transformar a saúde do seu couro cabeludo. Este tratamento intensivo foca na regeneração da barreira cutânea da cabeça, combatendo a queda capilar de origem inflamatória e controlando a descamação de forma eficaz e duradoura.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/couro-cabeludo/Sérum Capilar Lilyeve.webp" alt="Sérum Capilar Lilyeve Growturn Brush Ampoule 100Ml" />
+                                        <h5 class="text-colored fw-bold mt-2">Sérum Capilar Lilyeve Growturn Brush Ampoule 100Ml</h5>
+                                        <p>
+                                            Tratamento para couro cabeludo com BioExo-Water patenteada: Nossa fórmula exclusiva penetra profundamente nas raízes do cabelo, reduzindo a inflamação para aliviar a coceira no couro cabeludo enquanto nutre e hidrata para uma saúde ideal do couro cabeludo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/couro-cabeludo/Mantecorp Skincare.webp" alt="Loção Fortalecedora Mantecorp Skincare Antiqueda Pielus Forte 120ml" />
+                                        <h5 class="text-colored fw-bold mt-2">Loção Fortalecedora Mantecorp Skincare Antiqueda Pielus Forte 120ml</h5>
+                                        <p>
+                                            A Loção Fortalecedora Mantecorp Skincare Antiqueda Pielus Forte é uma solução inovadora desenvolvida para combater a queda capilar de forma eficaz. Este produto atua diretamente no couro cabeludo, estimulando o crescimento saudável dos fios enquanto nutre e fortalece as raízes.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/couro-cabeludo/Keune Scalp Sensitive.webp" alt="Keune Scalp Sensitive - Sérum Capilar 50ml" />
+                                        <h5 class="text-colored fw-bold mt-2">Keune Scalp Sensitive - Sérum Capilar 50ml</h5>
+                                        <p>
+                                            O Sérum Capilar Keune Scalp Sensitive é o cuidado intensivo de "primeiros socorros" para o couro cabeludo. Com uma fórmula de textura ultraleve e rápida absorção, este sérum sem enxágue foi desenhado para atuar diretamente na raiz do problema, acalmando instantaneamente áreas irritadas e criando um escudo invisível de proteção. É o aliado ideal para quem sofre com picos de sensibilidade, descamação ou desconforto após processos químicos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="anti-idade">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/antiidade/Celimax The Vita A Retinal Shot.jpg" alt="Celimax The Vita A Retinal Shot" />
+                                        <h5 class="text-colored fw-bold mt-2">Celimax The Vita A Retinal Shot</h5>
+                                        <p>
+                                            Booster facial. Celimax The Vita A Retinal Shot renova, firma e suaviza a pele, estimulando a renovação celular e melhorando a textura.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/produtos/antiidade/Numbuzin 9+ Nad +retinol Creme Para Os Olhos Anti Rugas.webp" alt="Numbuzin 9+ Nad +retinol Creme Para Os Olhos Anti Rugas" />
+                                        <h5 class="text-colored fw-bold mt-2">Numbuzin 9+ Nad +retinol Creme Para Os Olhos Anti Rugas</h5>
+                                        <p>
+                                            Efeito preenchedor, firmeza e olhar descansado em dose precisa.O NUMBUZIN No.9 Creme para Olhos Volumizador NAD + Retinol (10ml) é um tratamento intensivo de alta precisão desenvolvido para revitalizar a área delicada dos olhos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"><span class="text-colored">Fale conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 d-flex flex-column">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7684.64734950759!2d-38.94790080459811!3d-15.627743209535655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x737432229acf939%3A0xe2f207615b7bae1a!2sMakaira%20Beach%20Resort!5e0!3m2!1spt-BR!2sbr!4v1768912836245!5m2!1spt-BR!2sbr" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Santa Cristina nº 145, Bairro Belvedere - Belo Horizonte - MG
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 Lumiè, clínica de dermatologia. Todos os direitos reservados.
+            </p>
+            <ul>
+                <li>
+                    <a href="http://www.linkedin.com/in/pattríciacruz">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.github.com/pattríciacruz">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
